@@ -1,0 +1,70 @@
+
+.carousel{
+
+	height: : 300px;
+}
+
+
+.separateur{
+
+	border-top: solid 2px black;
+
+}
+
+.buttonwhite{
+
+	border: solid 1px grey;
+}
+
+.gollum{
+
+	color:  #d5cecd ;
+}
+
+
+/*Section des gandalfs*/
+
+
+.card {
+    margin: 10px auto;
+}
+
+.card-img-top {
+    opacity: 0.2;
+}
+
+.rewardtext {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+}
+
+.fellowname {
+    position: absolute;
+    text-align: center;
+    top: 270px;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: bold;
+    background-color: #000000;
+    color: white;
+    opacity: 0;
+}
+
+.topCardContainer:hover > .card-img-top {
+    opacity: 1;
+}
+
+.topCardContainer:hover > .rewardtext {
+    opacity: 0;
+}
+
+.topCardContainer:hover > .fellowname {
+    opacity: 1;
+}
