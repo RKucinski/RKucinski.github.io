@@ -1,3 +1,82 @@
+/* Global */
+
+@font-face {
+	font-family: "partybusiness";
+	src: url('partybusiness.ttf');
+}
+
+@font-face {
+	font-family: "tengwar";
+	font-style: normal;
+	src: url('tngan.ttf');
+}
+@font-face {
+	font-family: "tengwar";
+	font-weight: bold;
+	src: url('tnganb.ttf');
+}
+@font-face{
+	font-family: "tengwar";
+	font-weight: bold;
+	font-style: italic;
+	src: url('tnganbi.ttf');
+}
+@font-face{
+	font-family: "anitron";
+	src: url('anirm.ttf');
+}
+@font-face{
+	font-family: "anitron";
+	font-weight: bold;
+	src: url('anirb.ttf');
+}
+
+p{
+
+	font-family: "partybusiness", sans-serif;
+}
+
+h1, h5{
+
+	font-family: "anitron", sans-serif;
+	font-weight: bold;
+}
+
+/* Partie Nav */
+
+nav{
+
+	background-color: #FF5D1C;
+	font-family: "anitron", sans-serif;
+	font-style: bold;
+}
+
+.navbar-nav a{
+
+	color: #fff;
+}
+
+.navbar-nav a:hover{
+
+	color: #fff;
+	border-bottom: solid 3px #fff;
+
+}
+
+
+/* Partie Carousel */
+
+.carousel-caption p{
+
+	font-weight: normal;
+	font-size: 4em;
+}
+
+.carousel-caption{
+	text-align: left;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
 .carousel{
 
@@ -14,6 +93,10 @@
 .buttonwhite{
 
 	border: solid 1px grey;
+	color: #FF5D1C;
+	border-radius: 1px;
+	border-style: solid;
+	box-shadow: rgba(199, 186, 181, 0.8) 1px;
 }
 
 .gollum{
@@ -21,40 +104,150 @@
 	color:  #d5cecd ;
 }
 
+.gollum, .gollumtext{
 
-/*Section des gandalfs*/
+	font-size: 1.5vw;
+}
 
+
+
+/*Section des fellows*/
+
+.wrapper, .hunters, .army{
+
+	background-image: url(https://image.noelshack.com/fichiers/2018/36/7/1536498559-bg-light.png);
+	border-left: 1px solid #C7BAB5;
+	border-right: 1px solid #C7BAB5;
+	padding-bottom: 60px;
+}
+
+h4{
+
+	font-family: "anitron";
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.mordor{
+
+	font-family: "tengwar";
+	color: #FF5D1C;
+}
+
+.tabwanted{
+
+	text-align: center;
+}
+
+.fellowslist a{
+
+	font-family: "anitron";
+	color: grey;
+}
+
+.fellowslist a:hover{
+
+	color: #FF5D1C;
+	border-bottom: solid 3px #FF5D1C;
+}
+
+.apres{
+	color: #FF5D1C;
+	display: none;
+}
+
+.fellowslist a{
+
+	font-size: 1.2vw;
+}
+
+.change .apres, .change:hover .avant{
+	display: none;
+}
+
+.change:hover .apres{
+	display: block;
+}
+
+
+/* pour les portraits */
+
+.cardfellows{
+
+	background-image: url(https://image.noelshack.com/fichiers/2018/36/7/1536500234-bg-dark.png);
+	padding: 5px;
+
+}
+
+
+.card-text{
+
+	color: #C7BAB5;
+	font-size: 1.7vw;
+}
 
 .card {
-    margin: 10px auto;
+    margin: 10px;
+    border-radius: 0px;
 }
 
+
 .card-img-top {
-    opacity: 0.2;
+    opacity: 0.7;
+    border-radius: 0px;
 }
+
+.topCardContainer{
+
+	background-color: #fff;
+	border-radius: 0px;
+	opacity: 0.9;
+}
+
 
 .rewardtext {
     position: absolute;
     text-align: center;
-    top: 20px;
+    top: 5%;
     width: 70%;
     margin-left: 15%;
-    font-weight: bold;
-    background-color: grey;
-    color: white;
+    font-weight: normal;
+    background-color: #fff;
+    color: black;
     border-radius: 8px;
+    opacity: 0.8;
+    font-size: 2.3vw;
+}
+
+.gold{
+
+	color: #FF5D1C;
+}
+
+.mainname
+{
+	font-family: "partybusiness";
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1	
 }
 
 .fellowname {
     position: absolute;
     text-align: center;
-    top: 270px;
+    bottom: 30%;
     width: 70%;
     margin-left: 15%;
     font-weight: bold;
-    background-color: #000000;
     color: white;
     opacity: 0;
+    font-size: 2vw;
 }
 
 .topCardContainer:hover > .card-img-top {
@@ -68,3 +261,111 @@
 .topCardContainer:hover > .fellowname {
     opacity: 1;
 }
+
+.topCardContainer:hover > .mainname {
+	opacity: 0;
+
+}
+
+.containerGimli h1{
+
+	font-family: "partybusiness";
+	color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 70%;
+    margin-left: 15%;
+    opacity: 1;
+	text-decoration: line-through #FF5D1C;
+}
+
+.dead{
+
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: normal;
+    color: #FF5D1C;
+    font-size: 4.3vw;
+}
+
+.card-img-top-gimli{
+
+	opacity: 0.3;
+}
+
+.card-body{
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/*  reward   */
+
+.rewardcontainer, .ring, .contact{
+
+	background-image: url(https://image.noelshack.com/fichiers/2018/36/7/1536500234-bg-dark.png);
+	color: #fff;
+	padding: 20px
+}
+
+.rewardcontainer p{
+	padding: 20px
+
+}
+
+
+#buttonpadding{
+
+	padding-bottom: 30px;
+}
+
+
+/* hunters  */
+
+.hunters, .ring, .army h4{
+
+	text-align: left;
+}
+
+.card-header{
+
+	background-color: #FF5D1C;
+}
+
+.card-body{
+
+	color: black;
+}
+
+input, select, textarea{
+
+	margin-bottom: 15px;
+}
+
+.footer{
+
+	background-color: #FF5D1C;
+	font-family: "anitron", sans-serif;
+	font-style: bold;
+	color: #fff;
+}
+
+.footer a{
+
+	color: #fff;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+
+	margin-top: 20px;
+}
+
