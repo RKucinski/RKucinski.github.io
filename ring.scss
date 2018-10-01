@@ -1,0 +1,57 @@
+
+$orange: #FE661D;
+$yellow: #FCCA01;
+$white: #FFF1DC;
+$gray: #343434;
+
+
+@mixin ringNew($size, $color, $border-width){
+    border: $border-width $color solid;
+    -webkit-box-shadow: 2px 2px 2px rgba($color, 0.7);
+    box-shadow: 2px 2px 2px rgba($color, 0.7);
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}
+
+.ring {
+    background-image: none;
+    margin: 15px;
+  }
+
+.group{
+    margin-bottom: 25px;
+}
+
+.ringAffair{
+    padding: 50px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper{
+    #precious{
+        .ring{
+            @include ringNew(50px, $orange, 5px);
+        }
+    }
+
+    #theOneRing{
+        .ring{
+            @include ringNew(180px, $yellow, 12px);
+        }
+    }
+
+    #multiRings{
+        .group{  
+            @for $i from 1 through 6 {
+                .ring-#{$i} {
+                @include ringNew(20px*$i, $gray, 2px*$i);
+                margin: $i * -3px;
+                }
+            }
+        }
+    }
+}
